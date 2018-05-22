@@ -1,10 +1,10 @@
 #N canvas 243 82 450 300 10;
-#X text 12 10 ADDRESS : 192.168.11.10 PORT : 4001;
 #X floatatom 18 78 5 0 0 0 - - -, f 5;
 #X obj 18 48 osc-rcv 4001 test;
-#X obj 282 72 osc-send 4001 test;
-#X floatatom 282 47 5 0 0 0 - - -, f 5;
+#X floatatom 156 94 5 0 0 0 - - -, f 5;
 #X obj 18 119 sel 0 1 2 3 4 5;
-#X connect 1 0 5 0;
-#X connect 2 0 1 0;
-#X connect 4 0 3 0;
+#X obj 156 119 osc-send 192.168.11.5 4001 test;
+#X text 13 10 ADDRESS : 192.168.11.5 PORT : 4001;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;

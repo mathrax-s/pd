@@ -31,12 +31,12 @@
 -1 -1;
 #X msg 313 230 1 2;
 #X obj 346 229 del 4;
-#X floatatom 206 166 5 0 0 0 - - -;
+#X floatatom 206 166 5 0 0 0 - - -, f 5;
 #X obj 206 87 t f b;
-#X floatatom 436 149 5 0 0 0 - - -;
-#X floatatom 86 149 5 0 0 0 - - -;
-#X floatatom 125 77 5 0 0 0 - - -;
-#X floatatom 225 61 5 0 0 0 - - -;
+#X floatatom 436 149 5 0 0 0 - - -, f 5;
+#X floatatom 86 149 5 0 0 0 - - -, f 5;
+#X floatatom 125 77 5 0 0 0 - - -, f 5;
+#X floatatom 225 61 5 0 0 0 - - -, f 5;
 #X obj 163 460 *~;
 #X obj 86 46 - 12;
 #X obj 242 423 m_crossfade;
@@ -51,7 +51,7 @@
 #X obj 206 30 + 24;
 #X msg 499 252 0 10;
 #X obj 436 194 osc~;
-#X obj 163 425 /~ 6;
+#X obj 163 425 /~ 1;
 #X connect 0 0 22 0;
 #X connect 0 0 35 0;
 #X connect 0 0 45 0;

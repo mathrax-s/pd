@@ -4,9 +4,9 @@
 #X text 13 10 ADDRESS : 192.168.11.5 PORT : 4001;
 #X obj 18 48 rcv_data 4001 test;
 #X msg 208 84 0;
-#X obj 156 119 send_data 192.168.11.5 3000 sound;
 #X msg 240 84 100;
+#X obj 156 119 send_data 192.168.11.5 3000 pd;
 #X connect 0 0 1 0;
 #X connect 3 0 0 0;
-#X connect 4 0 5 0;
-#X connect 6 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 6 0;
